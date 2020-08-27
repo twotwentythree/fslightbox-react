@@ -22,6 +22,9 @@ const Video = (
         onLoadedMetadata={sourcesLoadsHandlers[i].handleVideoLoad}
         className={`${SOURCE_CLASS_NAME} ${PREFIX}video`}
         controls
+        controlsList="nodownload"
+        disablePictureInPicture
+        disableRemotePlayback
         ref={sourcesElements[i]}
         {...attributes}>
         <source src={sources[i]} />
