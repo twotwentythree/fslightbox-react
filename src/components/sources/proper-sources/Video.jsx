@@ -18,6 +18,8 @@ const Video = (
         attributes['poster'] = videosPosters[i]
     }
 
+    console.log(sources)
+
     return <video
         onLoadedMetadata={sourcesLoadsHandlers[i].handleVideoLoad}
         className={`${SOURCE_CLASS_NAME} ${PREFIX}video`}
