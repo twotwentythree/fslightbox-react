@@ -24,7 +24,7 @@ const Video = (
         controls
         controlsList="nodownload"
         disablePictureInPicture
-        disableRemotePlayback
+        disableremoteplayback
         ref={sourcesElements[i]}
         {...attributes}>
         <source src={sources[i]} />
