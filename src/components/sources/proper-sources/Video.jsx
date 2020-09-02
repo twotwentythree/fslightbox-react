@@ -18,7 +18,7 @@ const Video = (
         attributes['poster'] = videosPosters[i]
     }
 
-    console.log(sources)
+    console.log('video sources', sources)
 
     return <video
         onLoadedMetadata={sourcesLoadsHandlers[i].handleVideoLoad}
